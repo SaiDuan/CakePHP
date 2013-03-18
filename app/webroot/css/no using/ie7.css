@@ -1,0 +1,28 @@
+.moduletable h3 {
+	line-height: 1.5em;
+	text-indent:12px;
+}
+#step h1 {
+	font-size:160%;
+}
+#heading span {
+	font-size:16px;
+}
+div#menu {
+	text-align:right;
+	float:none !important;
+}
+#suit {
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+#hrest {
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+#suit ul , #hrest ul{
+	margin-left:5px;
+}
+#sresults {
+	margin-left:15px
+}

@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CakePHP: the rapid development php framework: Halls</title>
+<link href="/project25/CakePHP/favicon.ico" type="image/x-icon" rel="icon" />
+<link href="/project25/CakePHP/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="/project25/CakePHP/css/template.css" />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="/project25/CakePHP/js/jquery-1.8.2.min.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/jquery-ui-1.8.24.custom.min.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.widget.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.datepicker.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.core.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.button.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.dialog.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.mouse.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.position.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.draggable.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.sortable.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.droppable.js">
+</script>
+<script type="text/javascript" src="/project25/CakePHP/js/development-bundle/ui/jquery.ui.tabs.js">
+</script>
+<style type="text/css">
+/*<![CDATA[*/
+ div.c1 {display:none;}
+/*]]>*/
+</style>
+</head>
+<body>
+<div class="container">
+<div id="container"></div>
+<div id="content">
+<div id="header"><!--<div id = "logo">-->
+<a href="/project25/CakePHP/"><img src="/project25/CakePHP/img/logo.png" alt="Logo" /></a> <!--<a href="/project25/CakePHP/halls/pages/home"><img src="/project25/CakePHP/img/logo.png" alt="Logo" /></a>-->
+<div id="top_right">Welcome steven. <a href="/project25/CakePHP/users/logout">Logout</a></div>
+</div>
+</div>
+<div class="moduletable" id="menu">
+<ul class="menu" id="navlist">
+<li id="current" class="active item54"><a href="http://ie.infotech.monash.edu.au/project25/CakePHP/"><span>Search</span></a></li>
+<li class="item55"><a href="/project25/hallsforhire/index.php/about"><span>About</span></a></li>
+<li class="item83"><a href="/project25/CakePHP/halls"><span>List your hall</span></a></li>
+<li class="item82"><a href="/project25/CakePHP/hallsowners"><span>My Profile Panel</span></a></li>
+</ul>
+</div>
+<div id="top_rest"><script type="text/javascript">
+//<![CDATA[
+    $(function() {
+        $( "#tabs" ).tabs();
+        $( "#accordion" ).accordion();
+    });
+//]]>
+</script><br />
+<br />
+<div class="halls form">
+<form action="/project25/CakePHP/halls/add" id="HallAddForm" method="post" accept-charset="utf-8">
+<div class="c1"><input type="hidden" name="_method" value="POST" /></div>
+<h2 class="formTitle">Add Hall</h2>
+<div id="tabs">
+<ul>
+<li><a href="#tab1">Halls Details</a></li>
+<li><a href="#tab2">Rooms &amp; Capacity</a></li>
+<li><a href="#tab3">Hall Features</a></li>
+<li><a href="#tab4">Suitabilities</a></li>
+<li><a href="#tab5">Hall Inclusions</a></li>
+<li><a href="#tab6">Hall Availability</a></li>
+<li><a href="#tab7">Hall Restrictions</a></li>
+<li><a href="#tab8">Pricing</a></li>
+</ul>
+<div id="tab1">
+<fieldset><legend>Hall Details</legend>
+<div class="input text"><label for="HallHallName">Hall Name</label><input name="data[Hall][hall_name]" maxlength="45" type="text" id="HallHallName" /></div>
+<div class="input text"><label for="HallCountryCode">Country Code</label><input name="data[Hall][country_code]" maxlength="45" type="text" id="HallCountryCode" /></div>
+<div class="input text"><label for="HallPhoneNumber">Phone Number</label><input name="data[Hall][phone_number]" maxlength="45" type="text" id="HallPhoneNumber" /></div>
+<div class="input text"><label for="HallStreetAddress">Street Address</label><input name="data[Hall][street_address]" maxlength="45" type="text" id="HallStreetAddress" /></div>
+<div class="input text"><label for="HallSuburb">Suburb</label><input name="data[Hall][suburb]" maxlength="45" type="text" id="HallSuburb" /></div>
+<div class="input text"><label for="HallState/province">State/province</label><input name="data[Hall][state/province]" maxlength="45" type="text" id="HallState/province" /></div>
+<div class="input text"><label for="HallCountry">Country</label><input name="data[Hall][country]" maxlength="45" type="text" id="HallCountry" /></div>
+<div class="input text"><label for="HallPostcode/zipcode">Postcode/zipcode</label><input name="data[Hall][postcode/zipcode]" maxlength="45" type="text" id="HallPostcode/zipcode" /></div>
+<div class="input text"><label for="HallWebsite">Website</label><input name="data[Hall][website]" maxlength="45" type="text" id="HallWebsite" /></div>
+<div class="input text"><label for="HallEmail">Email</label><input name="data[Hall][email]" maxlength="45" type="text" id="HallEmail" /></div>
+<div class="input textarea"><label for="HallHallDescription">Hall Description</label>
+<textarea name="data[Hall][hall_description]" cols="30" rows="6" id="HallHallDescription">
+</textarea></div>
+</fieldset>
+</div>
+<div id="tab2">
+<fieldset><legend>Rooms &amp; Capacity</legend>
+<div class="input text"><label for="HallCapacity">Capacity</label><input name="data[Hall][capacity]" maxlength="45" type="text" id="HallCapacity" /></div>
+</fieldset>
+</div>
+<div id="tab3">
+<fieldset><br />
+<legend>Hall Features</legend> <input type="hidden" name="data[Hall][features_private_area]" id="HallFeaturesPrivateArea_" value="" /><input type="radio" name="data[Hall][features_private_area]" id="HallFeaturesPrivateAreaYes" value="Yes" /><label for="HallFeaturesPrivateAreaYes">Yes</label><input type="radio" name="data[Hall][features_private_area]" id="HallFeaturesPrivateAreaNo" value="No" /><label for="HallFeaturesPrivateAreaNo">No</label>
+<table>
+<tr>
+<td></td>
+</tr>
+</table>
+<div class="input number"><label for="HallFeaturesPrivateToilets">Features Private Toilets</label><input name="data[Hall][features_private_toilets]" type="number" id="HallFeaturesPrivateToilets" /></div>
+<div class="input number"><label for="HallFeaturesDisabledToilets">Features Disabled Toilets</label><input name="data[Hall][features_disabled_toilets]" type="number" id="HallFeaturesDisabledToilets" /></div>
+<div class="input number"><label for="HallFeaturesWheelchairAccess">Features Wheelchair Access</label><input name="data[Hall][features_wheelchair_access]" type="number" id="HallFeaturesWheelchairAccess" /></div>
+<div class="input number"><label for="HallFeaturesVenueCatering">Features Venue Catering</label><input name="data[Hall][features_venue_catering]" type="number" id="HallFeaturesVenueCatering" /></div>
+<div class="input select"><label for="HallFeatureexternalcateringsId">Featureexternalcaterings</label><select name="data[Hall][featureexternalcaterings_id]" id="HallFeatureexternalcateringsId">
+<option value="3">Please Select</option>
+<option value="4">BYO or External Catering not allowed</option>
+<option value="5">BYO or External Company allowed</option>
+<option value="6">BYO cake only</option>
+</select></div>
+<div class="input select"><label for="HallFeatureparkingsId">Featureparkings</label><select name="data[Hall][featureparkings_id]" id="HallFeatureparkingsId">
+<option value="16">Small Car Park</option>
+<option value="17">Large Car Park</option>
+<option value="18">Limited Street Parking</option>
+<option value="19">Ample Street Parking</option>
+</select></div>
+<div class="input number"><label for="HallFeaturesOtherCatering">Features Other Catering</label><input name="data[Hall][features_other_catering]" type="number" id="HallFeaturesOtherCatering" /></div>
+</fieldset>
+</div>
+<div id="tab4">
+<fieldset><legend>Suitabilities</legend>
+<table cellpadding='1' width='50%'>
+<tr>
+<td class='heading'>18th</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][3]" id="SuitabilityCheckbox3_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][3]" value="1" id="SuitabilityCheckbox3" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>21st</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][2]" id="SuitabilityCheckbox2_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][2]" value="1" id="SuitabilityCheckbox2" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Adult Classes</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][8]" id="SuitabilityCheckbox8_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][8]" value="1" id="SuitabilityCheckbox8" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>After Party</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][4]" id="SuitabilityCheckbox4_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][4]" value="1" id="SuitabilityCheckbox4" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Band Practice</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][10]" id="SuitabilityCheckbox10_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][10]" value="1" id="SuitabilityCheckbox10" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Bar/Bat Mitzvahs</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][26]" id="SuitabilityCheckbox26_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][26]" value="1" id="SuitabilityCheckbox26" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Birthday Party</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][5]" id="SuitabilityCheckbox5_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][5]" value="1" id="SuitabilityCheckbox5" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Children's Party</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][6]" id="SuitabilityCheckbox6_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][6]" value="1" id="SuitabilityCheckbox6" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Craft Classes</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][11]" id="SuitabilityCheckbox11_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][11]" value="1" id="SuitabilityCheckbox11" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Dinners</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][23]" id="SuitabilityCheckbox23_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][23]" value="1" id="SuitabilityCheckbox23" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Engagements</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][25]" id="SuitabilityCheckbox25_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][25]" value="1" id="SuitabilityCheckbox25" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Exhibitions</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][18]" id="SuitabilityCheckbox18_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][18]" value="1" id="SuitabilityCheckbox18" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Fitness Classes</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][12]" id="SuitabilityCheckbox12_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][12]" value="1" id="SuitabilityCheckbox12" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Forums</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][20]" id="SuitabilityCheckbox20_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][20]" value="1" id="SuitabilityCheckbox20" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>gsd</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][28]" id="SuitabilityCheckbox28_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][28]" value="1" id="SuitabilityCheckbox28" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Meetings</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][9]" id="SuitabilityCheckbox9_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][9]" value="1" id="SuitabilityCheckbox9" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Parents Group</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][13]" id="SuitabilityCheckbox13_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][13]" value="1" id="SuitabilityCheckbox13" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Performances</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][19]" id="SuitabilityCheckbox19_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][19]" value="1" id="SuitabilityCheckbox19" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Play Group</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][14]" id="SuitabilityCheckbox14_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][14]" value="1" id="SuitabilityCheckbox14" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Product Launches</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][22]" id="SuitabilityCheckbox22_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][22]" value="1" id="SuitabilityCheckbox22" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Rehearsal Space</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][7]" id="SuitabilityCheckbox7_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][7]" value="1" id="SuitabilityCheckbox7" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Religious Services</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][27]" id="SuitabilityCheckbox27_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][27]" value="1" id="SuitabilityCheckbox27" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Social Events</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][16]" id="SuitabilityCheckbox16_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][16]" value="1" id="SuitabilityCheckbox16" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Training</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][17]" id="SuitabilityCheckbox17_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][17]" value="1" id="SuitabilityCheckbox17" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Weddings</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][24]" id="SuitabilityCheckbox24_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][24]" value="1" id="SuitabilityCheckbox24" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Workshops</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Suitability][checkbox][15]" id="SuitabilityCheckbox15_" value="0" /><input type="checkbox" name="data[Suitability][checkbox][15]" value="1" id="SuitabilityCheckbox15" /></div>
+</td>
+</tr>
+</table>
+</fieldset>
+</div>
+<div id="tab5">
+<fieldset><legend>Hall Inclusions</legend>
+<div id="accordion"><legend>Indoor Facilties</legend>
+<div>
+<div class="input select"><label for="IndoorfacilityIndoorfacility">Indoorfacility</label><input type="hidden" name="data[Indoorfacility][Indoorfacility]" value="" id="IndoorfacilityIndoorfacility_" /> <select name="data[Indoorfacility][Indoorfacility][]" multiple="multiple" id="IndoorfacilityIndoorfacility">
+<option value="1">Trestle Tables</option>
+<option value="2">Round Tables</option>
+<option value="3">Chairs</option>
+<option value="4">Heatings</option>
+<option value="5">Air Con/Cooling</option>
+<option value="6">Shower Facilities</option>
+<option value="7">Kitchen (Commercials)</option>
+<option value="8">Kitchen (Domestic)</option>
+<option value="9">Kitchenette</option>
+<option value="10">Servery</option>
+<option value="11">Refrigerator</option>
+<option value="12">Electric Urn</option>
+<option value="13">Oven</option>
+<option value="14">Pie Warmer</option>
+<option value="15">Microwave</option>
+<option value="16">Dishwasher</option>
+</select></div>
+<div class="input textarea"><label for="HallIndoorFacilitiesOther">Indoor Facilities Other</label>
+<textarea name="data[Hall][indoor_facilities_other]" cols="30" rows="6" id="HallIndoorFacilitiesOther">
+</textarea></div>
+</div>
+<legend>Outdoor Facilities</legend>
+<div>
+<div class="input select"><label for="OutdoorfacilityOutdoorfacility">Outdoorfacility</label><input type="hidden" name="data[Outdoorfacility][Outdoorfacility]" value="" id="OutdoorfacilityOutdoorfacility_" /> <select name="data[Outdoorfacility][Outdoorfacility][]" multiple="multiple" id="OutdoorfacilityOutdoorfacility">
+<option value="1">Playground</option>
+<option value="2">Courtyard</option>
+<option value="3">Terrace</option>
+<option value="4">Balcony</option>
+<option value="5">Heating</option>
+<option value="6">Shelter</option>
+<option value="7">Benches</option>
+<option value="8">Tables</option>
+<option value="9">BBQ</option>
+</select></div>
+<div class="input textarea"><label for="HallOutdoorFacitilitiesOther">Outdoor Facitilities Other</label>
+<textarea name="data[Hall][outdoor_facitilities_other]" cols="30" rows="6" id="HallOutdoorFacitilitiesOther">
+</textarea></div>
+</div>
+<legend>Technical Facilities</legend>
+<div>
+<div class="input select"><label for="TechnicalFacilityTechnicalFacility">Technical Facility</label><input type="hidden" name="data[TechnicalFacility][TechnicalFacility]" value="" id="TechnicalFacilityTechnicalFacility_" /> <select name="data[TechnicalFacility][TechnicalFacility][]" multiple="multiple" id="TechnicalFacilityTechnicalFacility">
+<option value="2">PA/Sound System</option>
+<option value="3">Microphone</option>
+<option value="4">Projector Screen</option>
+<option value="5">Data Projector</option>
+<option value="6">Ipod Input</option>
+<option value="7">Sound Proof Studio</option>
+<option value="8">Piano</option>
+<option value="9">CD Player</option>
+<option value="10">Lectern</option>
+<option value="11">Stage</option>
+<option value="12">Large TV/Plasma</option>
+<option value="13">Wifi/Internet</option>
+<option value="14">DVD Player</option>
+<option value="15">Pin Board</option>
+<option value="16">White Board</option>
+<option value="17">Flip Chart</option>
+</select></div>
+<div class="input textarea"><label for="HallTechnicalFacilitiesOther">Technical Facilities Other</label>
+<textarea name="data[Hall][technical_facilities_other]" cols="30" rows="6" id="HallTechnicalFacilitiesOther">
+</textarea></div>
+</div>
+<legend>Party Facilities</legend>
+<div>
+<div class="input select"><label for="HallPartyfacilitiesdjsId">Partyfacilitiesdjs</label><select name="data[Hall][partyfacilitiesdjs_id]" id="HallPartyfacilitiesdjsId">
+<option value="2">Please Select</option>
+<option value="3">We can arrange DJ hire</option>
+<option value="4">We do not allow DJ hire</option>
+<option value="5">Customer can arrange DJ hire</option>
+</select></div>
+<div class="input select"><label for="HallPartyfacilitymusicsId">Partyfacilitymusics</label><select name="data[Hall][partyfacilitymusics_id]" id="HallPartyfacilitymusicsId">
+<option value="1">Please Select</option>
+<option value="2">We can arrange background music (free)</option>
+<option value="3">We do not arrange background music</option>
+</select></div>
+<div class="input select"><label for="HallPartyfacilitybandsId">Partyfacilitybands</label><select name="data[Hall][partyfacilitybands_id]" id="HallPartyfacilitybandsId">
+<option value="1">Please Select</option>
+<option value="2">Customer can arrange a band</option>
+<option value="3">No bands are allowed at this hall</option>
+</select></div>
+<div class="input select"><label for="HallPartyfacilitydiscosId">Partyfacilitydiscos</label><select name="data[Hall][partyfacilitydiscos_id]" id="HallPartyfacilitydiscosId">
+<option value="2">Please Select</option>
+<option value="3">Included (moving lights and mirror balls)</option>
+<option value="4">Included (with moving lights)</option>
+<option value="5">Included (with coloured lights)</option>
+<option value="6">Can be installed at extra cost</option>
+<option value="7">No discos lighting available</option>
+</select></div>
+<div class="input select"><label for="HallPartyfacilitydancefloorsId">Partyfacilitydancefloors</label><select name="data[Hall][partyfacilitydancefloors_id]" id="HallPartyfacilitydancefloorsId">
+<option value="1">Dance floor is included at no charge</option>
+<option value="2">Dance floor can be installed at extra cost</option>
+<option value="3">No dance floor, but there is a suitable area</option>
+<option value="4">Carpeted floor, not appropriate for dancing</option>
+</select></div>
+<div class="input textarea"><label for="HallPartyFacilitiesOther">Party Facilities Other</label>
+<textarea name="data[Hall][party_facilities_other]" cols="30" rows="6" id="HallPartyFacilitiesOther">
+</textarea></div>
+</div>
+</div>
+</fieldset>
+</div>
+<div id="tab6">
+<fieldset><legend>Hall Availability</legend>
+<table cellpadding='1' width='50%'>
+<tr>
+<td class='heading'>Monday</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Availability][checkbox][1]" id="AvailabilityCheckbox1_" value="0" /><input type="checkbox" name="data[Availability][checkbox][1]" value="1" id="AvailabilityCheckbox1" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Tuesday</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Availability][checkbox][2]" id="AvailabilityCheckbox2_" value="0" /><input type="checkbox" name="data[Availability][checkbox][2]" value="1" id="AvailabilityCheckbox2" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Wes</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Availability][checkbox][3]" id="AvailabilityCheckbox3_" value="0" /><input type="checkbox" name="data[Availability][checkbox][3]" value="1" id="AvailabilityCheckbox3" /></div>
+</td>
+</tr>
+</table>
+</fieldset>
+</div>
+<div id="tab7">
+<fieldset><legend>Hall Restrictions</legend>
+<div class="input select"><label for="HallRestrictionnoisesId">Restrictionnoises</label><select name="data[Hall][restrictionnoises_id]" id="HallRestrictionnoisesId">
+<option value="1">Please Select</option>
+<option value="2">No restriction regarding noise</option>
+<option value="3">Reasonable noise level at all time</option>
+<option value="4">Lower noise levels after 11pm</option>
+<option value="5">Lower noise levels after 12pm</option>
+</select></div>
+<div class="input select"><label for="HallRestrictioneventsId">Restrictionevents</label><select name="data[Hall][restrictionevents_id]" id="HallRestrictioneventsId">
+<option value="1">No restrictions on ticketed events</option>
+</select></div>
+<div class="input select"><label for="HallRestrictionminorsId">Restrictionminors</label><select name="data[Hall][restrictionminors_id]" id="HallRestrictionminorsId">
+<option value="1">Please Select</option>
+<option value="2">No restrictions regarding minors</option>
+<option value="3">Minors should be accompanied by adult</option>
+<option value="4">No minors are allowed on the hall ground</option>
+</select></div>
+<div class="input select"><label for="HallRestrictionanimalsId">Restrictionanimals</label><select name="data[Hall][restrictionanimals_id]" id="HallRestrictionanimalsId">
+<option value="1">Please Select</option>
+<option value="2">No restrictions regarding animals</option>
+<option value="3">Animals should remain outside</option>
+<option value="4">No animals allowed on hall grounds</option>
+</select></div>
+<div class="input select"><label for="HallRestrictionsmokingsId">Restrictionsmokings</label><select name="data[Hall][restrictionsmokings_id]" id="HallRestrictionsmokingsId">
+<option value="1">Please Select</option>
+<option value="2">No restrictions regarding smoking</option>
+<option value="3">Smoking area provided outside</option>
+<option value="4">No smoking on hall ground</option>
+</select></div>
+<table cellpadding='1' width='50%'>
+<tr>
+<td class='heading'>Halal Kitchen</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][2]" id="FeaturecateringrestrictionCheckbox2_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][2]" value="1" id="FeaturecateringrestrictionCheckbox2" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Kosher Kitchen</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][1]" id="FeaturecateringrestrictionCheckbox1_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][1]" value="1" id="FeaturecateringrestrictionCheckbox1" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No Alchohol Allowed</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][6]" id="FeaturecateringrestrictionCheckbox6_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][6]" value="1" id="FeaturecateringrestrictionCheckbox6" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No Catering Restrictions</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][7]" id="FeaturecateringrestrictionCheckbox7_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][7]" value="1" id="FeaturecateringrestrictionCheckbox7" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Pescetarian Kitchen</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][5]" id="FeaturecateringrestrictionCheckbox5_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][5]" value="1" id="FeaturecateringrestrictionCheckbox5" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Vegan Kitchen</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][4]" id="FeaturecateringrestrictionCheckbox4_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][4]" value="1" id="FeaturecateringrestrictionCheckbox4" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>Vegetarian Kitchen</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Featurecateringrestriction][checkbox][3]" id="FeaturecateringrestrictionCheckbox3_" value="0" /><input type="checkbox" name="data[Featurecateringrestriction][checkbox][3]" value="1" id="FeaturecateringrestrictionCheckbox3" /></div>
+</td>
+</tr>
+</table>
+<table cellpadding='1' width='50%'>
+<tr>
+<td class='heading'>No blue tack to be used on hall walls</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][4]" id="RestrictiondecorationCheckbox4_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][4]" value="1" id="RestrictiondecorationCheckbox4" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No confetti allowed on hall ground</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][2]" id="RestrictiondecorationCheckbox2_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][2]" value="1" id="RestrictiondecorationCheckbox2" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No decorations allow on the hall walls</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][6]" id="RestrictiondecorationCheckbox6_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][6]" value="1" id="RestrictiondecorationCheckbox6" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No pins to be used on the hall walls</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][5]" id="RestrictiondecorationCheckbox5_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][5]" value="1" id="RestrictiondecorationCheckbox5" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No restrictions on putting up decorations</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][1]" id="RestrictiondecorationCheckbox1_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][1]" value="1" id="RestrictiondecorationCheckbox1" /></div>
+</td>
+</tr>
+<tr>
+<td class='heading'>No sticky tape to be used on the hall walls</td>
+<td class='data'>
+<div class="input checkbox"><input type="hidden" name="data[Restrictiondecoration][checkbox][3]" id="RestrictiondecorationCheckbox3_" value="0" /><input type="checkbox" name="data[Restrictiondecoration][checkbox][3]" value="1" id="RestrictiondecorationCheckbox3" /></div>
+</td>
+</tr>
+</table>
+<div class="input text"><label for="HallHallsRestrictionOther">Halls Restriction Other</label><input name="data[Hall][halls_restriction_other]" maxlength="45" type="text" id="HallHallsRestrictionOther" /></div>
+</fieldset>
+</div>
+<div id="tab8">
+<fieldset><legend>Pricing</legend>
+<div class="input select"><label for="PricingPricing">Pricing</label><input type="hidden" name="data[Pricing][Pricing]" value="" id="PricingPricing_" /> <select name="data[Pricing][Pricing][]" multiple="multiple" id="PricingPricing">
+<option value="1">Yearly</option>
+<option value="2">month</option>
+</select></div>
+</fieldset>
+<br />
+<div class="input select"><label for="HallHallsownersId">Hallsowners</label><select name="data[Hall][hallsowners_id]" id="HallHallsownersId">
+<option value="1">steven</option>
+<option value="2">gf</option>
+<option value="3">tony1234</option>
+<option value="4">ibg</option>
+<option value="5">Hai</option>
+<option value="7">sai</option>
+</select></div>
+<div class="submit"><input type="submit" value="Submit" /></div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

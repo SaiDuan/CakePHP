@@ -1,0 +1,783 @@
+
+.h1 {
+    font-size: 170%;
+}
+
+.h2 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 160%;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+span.h4 {
+    font-size:120%;
+    font-weight:700;
+    text-transform:none;
+}
+span.addy{
+    font-size:100%;
+    font-weight:700;
+    text-transform:none;
+    color:#666;
+    padding-top:15px;
+}
+.h4 {
+    font-size: 100%;
+    text-transform: uppercase;
+}
+/*#sponsors, #sponsors p {text-align:center;}
+#sponsors {margin-right:60px;}
+*/
+#address {
+    font-weight:600;
+}
+/*
+div#rcontainer {float:left; width: 70%}
+div#sponsors {float:right; width:25%; margin-right:30px;}
+*/
+div#matches {
+    float:left;
+    width:100%;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:10px;
+    margin-top:20px;
+}
+div#hr {width:97%; height:1px; border-bottom:dotted 1px #999; clear:both;margin-bottom:10px;}
+div#sresults {float:left; width:50%; margin-left:15px}
+div#sagain {font-size:12px;float:right; width:30%; margin-top:20px; text-align:right; color:red; font-weight:700; margin-right:70px}
+#sagain a:link , #sagain a:visited{color:red;}
+div#sagain span {font-size: 80%}
+table td#label {
+    font-weight:bold;
+    width:90px;
+}
+table td#label2 {
+    font-weight:bold;
+    width:40%;
+    font-size:130%;
+}
+div#page {float:left; width:100%; margin-left:-15px;}
+table#pagination {borde:none;padding-top:10px; }
+table td#label1{
+    width:40%;
+    font-weight:bold;
+}
+#hrest{margin-top:-10px;}
+#hrest ul {width:99%; margin-left: -20px;}
+#hrest ul li {line-height:1.7em}
+#suit ul { width:99%; margin-left: -20px;}
+#suit ul li {float:left; width:44%; line-height:1.7em}
+#suit br {clear:left;}
+#suit{ margin-top:-10px;margin-bottom: 1em;}
+
+#details1 h3,#details2 h3,#details3 h3,#details4 h3,#details5 h3,#details6 h3,#details7 h3,#details8 h3, #details17 h3, #details13 h3, #details18 h3 {
+    font-size: 12px;
+    background-color:#032434;
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color:#fff;
+    height: 30px;
+    line-height: 2.3em;
+    width:94%;
+    padding-left:12px;
+}
+/*
+#sponsors h3{
+	background-color:#fff !important;
+	color:#000;
+	font-weight:700;
+	text-indent:0px;
+}
+*/
+td#backtosearch {
+    padding-top:50px;
+    text-align:center;
+}
+td#lablecol {width:23% !important;}
+span#backbtn{
+    font-size: 12px;
+    font-weight:700;
+    background-color:#38c0fd;
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color:#fff;
+    padding:10px 25px;
+    text-align:center;
+    margin-right:23px;
+    display:inline-block;
+}
+span#backbtn a:link, span#backbtn a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+span#backbtn a:hover {
+    color:#000;
+    text-decoration:none;
+}
+/* Main search form elements and multilayout search form elements */
+
+table#capacity th {
+    padding:3px 0px;
+}
+table#capacity th#classname {
+    padding-left:0px;
+    margin-left:0px;
+    text-align:left;
+}
+.searchbox {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 180px;
+    border: 1px inset #F5F5F5;
+}
+
+.searchfield {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 175px;
+    border: 1px inset #F5F5F5;
+}
+
+.slimsearchbox {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 88px;
+    border: 1px inset #F5F5F5;
+}
+
+.slimfield {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 82px;
+    border: 1px inset #F5F5F5;
+}
+
+
+/* Search module form elements */
+
+
+.searchbox2 {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 170px;
+    border: 1px inset #F5F5F5;
+}
+
+.searchfield2 {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 175px;
+    border: 1px inset #F5F5F5;
+}
+
+.slimsearchbox2 {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 80px;
+    border: 1px inset #F5F5F5;
+}
+
+.slimfield2 {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 67px;
+    border: 1px inset #F5F5F5;
+}
+
+
+/* form buttons and button-style links */
+.readitbtn{
+    border:none;
+    background:none;
+    text-align:left;
+    margin-left:-10px;
+    margin-top:15px;
+    cursor:pointer;
+    color:red;
+    font-weight:700;
+
+}
+a.readitbtn:link, a.readitbtn:visited {
+    color:red;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.readit {
+    background: url(../images/button_bg.gif) repeat-x left center #2E3D65;
+    border: 1px solid #032434;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.readit:link, a.readit:visited {
+    background: url(../images/button_bg.gif) repeat-x left center #2E3D65;
+    border: 1px solid #032434;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.readit:hover {
+    background: url(../images/button_bg.gif) repeat-x left center #2E3D65;
+    border: 1px solid #032434;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div#profileheaders{
+    padding-bottom:5px;
+}
+
+/* general styles for listings pages etc */
+div.mainheader  h4{
+    background-color:#032434;
+    color:#fff;
+    padding: 10px;
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    font-size:12px;
+    font-weight:600;
+    text-indent:12px;
+    width:95%;
+}
+.eztableheader{
+    background-color:#032434;
+    color:#fff;
+    padding: 5px;
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    font-size:12px;
+    font-weight:600;
+}
+.edit {
+    text-indent: 12px;
+    padding:10px;
+
+}
+div.eztableheader {
+    background-color:#032434;
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    color:#fff;
+    width:100%;
+    text-indent:12px;
+
+}
+
+.ezsubheader {
+    padding: 4px 5px;
+    background-color: #032434;
+    font-size: 120%;
+    color: #FFFFFF;
+}
+
+.listtableborder {
+    width: 97%;
+    border-bottom: dotted 1px #666;
+    margin-bottom:10px;
+    padding-bottom: 15px;
+}
+
+.listdivider {
+    background: url(../images/button_bg.gif) repeat-x left center #2E3D65;
+    height: 5px;
+}
+
+.searchtableborder {
+    width: 100%;
+    border: 1px solid #032434;
+    padding: 0px;
+}
+
+
+/* Featured and not featured listings background colours on the listings pages */
+
+
+.listbkgr {
+    background-color: #FFFFFF;
+    line-height: 15px;
+    padding: 0px;
+    width: 100%;
+}
+
+.listbkgr0 {
+    /*background-color: #DADADA;*/
+    line-height: 15px;
+    padding: 0px;
+    width: 100%;
+}
+
+.listbkgr1 {
+    background-color: red;
+    /*background: url(../images/bg_texture.jpg) repeat;*/
+    color: #FFFFFF;
+    line-height: 15px;
+    padding: 0px;
+    width: 100%;
+}
+
+.listbkgrin0 {
+    background-color: #FFFFFF;
+    line-height: 15px;
+    padding: 0px;
+    width: 100%;
+}
+
+.listbkgrin1 {
+    background-color: #FFFFFF;
+    line-height: 15px;
+    padding: 0px;
+    width: 100%;
+}
+
+.listsmtext0 {
+    font-size: 90%;
+    color: #333333;
+    font-weight: bold;
+}
+
+.listsmtext1 {
+    font-size: 90%;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+a.makemodel:link, a.makemodel:visited {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #6F874D;
+    font-weight: bold;
+    background-color: inherit;
+}
+
+a.makemodel:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #F99B44;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: inherit;
+}
+
+a.makelist:link, a.makelist:visited {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #6F874D;
+    font-weight: bold;
+    background-color: inherit;
+}
+
+a.makelist:hover {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #F99B44;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: inherit;
+}
+
+
+
+.shadebox {
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background: #C0C0C0;
+    color: #4F4F4F;
+}
+
+.ezright {
+    align: right;
+}
+
+.searchbkgr {
+    background-color: #F4F6F2;
+}
+
+
+
+/* Main Slideshow style classes */
+
+
+#ez_slideshow{
+    width:500px;	/* Total width of main template slideshow */
+    background-color: #000;
+    padding-top:4px;
+}
+
+#previewPane{ /* box surrounding the main image */
+    background-color: #000;
+    text-align:center;
+    vertical-align:middle;
+    margin-top:5px;
+    margin-bottom:5px;
+    position:relative;
+    overflow:hidden;
+    /* CSS HACK */
+    height: 302px;	/* IE 5.x */
+    height/* */:/**/290px;	/* Other browsers */
+    height: /**/290px;
+}
+
+#previewPane img{
+    line-height:250px;
+}
+
+#previewPane #largeImageCaption{	/* CSS styling of image caption below large image */
+    font-style:italic;
+    color:#DADADA;
+    text-align:center;
+    font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;	/* Font to use */
+    font-size:0.9em;
+    z-index:100;
+}
+
+#galleryContainer{	/* CSS styling of thumbnail sliders area below large image */
+    height:64px;	/* Height of the images + 2 */
+    background-color: #000;
+    position:relative;
+    overflow:hidden;
+    padding:0px;
+    /* CSS HACK */
+    height: 64px;	/* IE 5.x - Added 2 pixels for border left and right */
+    height/* */:/**/64px;	/* Other browsers */
+    height: /**/64px;
+}
+
+#arrow_left{
+    position:absolute;
+    top:2px;
+    left:0px;
+    z-index:10;
+    background-color: #000;
+}
+
+#arrow_right{
+    position:absolute;
+    top:2px;
+    right:0px;
+    z-index:10;
+    background-color: #000;
+}
+
+#theImages{
+    position:absolute;
+    width:100000px;
+    padding-top:2px;
+}
+
+#theImages #slideEnd{
+    float:left;
+}
+
+#theImages img{
+    float:left;
+    padding:3px;
+    filter: alpha(opacity=95);
+    opacity: 0.75;
+    cursor:pointer;
+    border:0px;
+}
+
+#waitMessage{
+    display:none;
+    position:absolute;
+    left:200px;
+    top:150px;
+    background-color:inherit;
+    border:0px double #000;
+    padding:4px;
+    color:#555;
+    font-size:0.9em;
+    font-family:arial;
+}
+
+#theImages .imageCaption{
+    display:none;
+}
+
+#ez_slideshowclick{
+    width:500px;	/* Total width of main template slideshow */
+    text-align: center;
+}
+
+
+/* CSS styling of dropdown sliders with arrows */
+
+
+.divEZToggle {
+    margin: 0;
+    color: #666;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    background: transparent url(../images/arrow.png) 5px 50% no-repeat;
+    padding-left: 20px;
+}
+
+.divEZToggleText {
+    font-weight: bold;
+    font-size: 13px;
+    color: #666;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.propertyInfoWrapper {
+    float: left;
+    width: 100%;
+    border: 0px solid #dddddd;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+.propertyInfo {
+    padding: 2px;
+}
+
+
+/* CSS styling for listing pages watermark overlays */
+
+
+#watermark_box {
+    position:relative;
+    display:block;
+}
+
+img.watermark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border:0px solid #585858;
+}
+
+
+/* CSS styling for full details page watermark overlays just in case those files need different padding */
+
+
+#watermark_box2 {
+    position:relative;
+    display:block;
+}
+
+img.watermark2 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border:0px solid #585858;
+}
+
+
+/* CSS styling of regular size boxed thumbnails */
+
+
+.imageBox_td{
+    width:95px;	/* Width of table column enclosing the boxed thumbnails */
+}
+.imageBox1_td{
+    width:195px;	/* Width of table column enclosing the boxed thumbnails */
+}
+
+.imageBox_theImage, .imageBox_theImage1{
+    width:80px;	/* Width of image */
+    height:60px;	/* Height of image */
+
+    /*
+    Don't change these values *
+    */
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-bottom:2px;
+    border:1px solid #000;
+}
+.imageBox_theImage1 {width:180px; height:150px;}
+.imageBox .imageBox_theImage, .imageBox1 .imageBox_theImage1{
+    width:80px;	/* Width of image */
+    height:60px;	/* Height of image */
+    border:0px solid #CCC;	/* Border color for not selected images */
+    padding:2px;
+}
+.imageBox1 .imageBox_theImage1{
+    width:180px;	/* Width of image */
+    height:150px;	/* Height of image */
+}
+
+/* CSS styling for shadow effects on boxed thumbnails */
+
+
+.shadow-bringer, .shadow-bringer1 {
+    width: 84px;
+    height: 64px;
+    margin: 0px auto;
+    padding: 5px;
+    background: #ffffff;
+    border:1px solid #CCC;	/* Border color for not selected images */
+}
+.shadow-bringer1 {
+    width:182px;
+    height:152px;
+}
+.shadow, .shadow1 {
+    -moz-box-shadow: 3px 3px 4px #818181;
+    -webkit-box-shadow: 3px 3px 4px #818181;
+    box-shadow: 3px 3px 4px #818181;
+
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#818181')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#818181');
+}
+
+
+
+/* CSS styling of larger size boxed thumbnails used on the multicolumn listings page template */
+
+
+.L_imageBox_theImage {
+    width:80px;	/* Width of image */
+    height:60px;	/* Height of image */
+
+    /*
+    Don't change these values *
+    */
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-bottom:2px;
+}
+
+.L_imageBox .L_imageBox_theImage {
+    border:0px solid #CCC;	/* Border color for not selected images */
+    padding:2px;
+}
+
+
+/* CSS styling for shadow effects on boxed thumbnails */
+
+
+.L_shadow-bringer {
+    width: 130px;
+    height: 120px;
+    margin: 0px auto;
+    padding: 5px;
+    background: #ffffff;
+    border:1px solid #CCC;	/* Border color for not selected images */
+}
+
+.L_shadow {
+    -moz-box-shadow: 3px 3px 4px #818181;
+    -webkit-box-shadow: 3px 3px 4px #818181;
+    box-shadow: 3px 3px 4px #818181;
+
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#818181')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#818181');
+}
+
+
+ezfieldset {
+    border: none;
+    padding: 10px 5px;
+}
+
+
+
+div.width-100 { width: 100%; }
+
+fieldset.adminform { border: 1px solid #ccc; margin: 0 10px 10px 10px; }
+
+fieldset {
+    margin-bottom: 10px;
+    border: 1px #ccc solid;
+    padding: 5px;
+    text-align: left;
+}
+
+fieldset p {  margin: 10px 0px;  }
+
+legend    {
+    color: #0B55C4;
+    font-size: 12px;
+    font-weight: bold;
+    background-color:#FFF;
+}
+
+table.admintable td 					 { padding: 3px; }
+table.admintable td.key,
+table.admintable td.paramlist_key {
+    background-color: #f6f6f6;
+    text-align: right;
+    width: 180px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+}
+
+table.admintable td.key.vtop { vertical-align: top; }
+
+td#help,td#help1,td#help2,td#help3,td#help4,td#help5,td#help6,td#help7,dt#help8,td#help9 {
+    width:100%; margin-bottom:10px;
+}
+td#help h4,td#help1 h4,td#help2 h4,td#help3 h4,td#help4 h4,td#help5 h4,td#help6 h4,td#help7 h4,td#help8 h4,td#help9 h4
+{
+    padding: 5px 0;
+    font-size:110%;
+    color:#ff0000;
+
+
+}
+td#help a:link, td#help a:visited,
+td#help1 a:link, td#help1 a:visited,
+td#help2 a:link, td#help2 a:visited,
+td#help3 a:link, td#help3 a:visited,
+td#help4 a:link, td#help4 a:visited,
+td#help5 a:link, td#help5 a:visited,
+td#help6 a:link, td#help6 a:visited,
+td#help7 a:link, td#help7 a:visited,
+td#help8 a:link, td#help8 a:visited,
+td#help9 a:link, td#help9 a:visited{
+    color:#ff0000; font-weight:700; text-decoration:none;
+}
+td#help a:hover, td#help1 a:hover,td#help 2a:hover,td#help3 a:hover,td#help4 a:hover,td#help5 a:hover,
+                                           td#help6 a:hover,td#help7 a:hover,td#help8 a:hover,td#help9 a:hover{
+                                               color:#ff0000; font-weight:700; text-decoration:underline;
+                                           }
+.lblcap {font-size:130%}

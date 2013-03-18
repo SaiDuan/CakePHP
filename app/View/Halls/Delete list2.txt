@@ -1,0 +1,61 @@
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Hall'), array('action' => 'edit', $hall['Hall']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Hall'), array('action' => 'delete', $hall['Hall']['id']), null, __('Are you sure you want to delete # %s?', $hall['Hall']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Halls'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Hall'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Hallsowners'), array('controller' => 'hallsowners', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Hallsowner'), array('controller' => 'hallsowners', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Featureparkings'), array('controller' => 'featureparkings', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Featureparking'), array('controller' => 'featureparkings', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Featureexternalcaterings'), array('controller' => 'featureexternalcaterings', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Featureexternalcatering'), array('controller' => 'featureexternalcaterings', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Partyfacilitiesdjs'), array('controller' => 'partyfacilitiesdjs', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Partyfacilitiesdj'), array('controller' => 'partyfacilitiesdjs', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Partyfacilitymusics'), array('controller' => 'partyfacilitymusics', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Partyfacilitymusic'), array('controller' => 'partyfacilitymusics', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Partyfacilitybands'), array('controller' => 'partyfacilitybands', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Partyfacilityband'), array('controller' => 'partyfacilitybands', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Partyfacilitydiscos'), array('controller' => 'partyfacilitydiscos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Partyfacilitydisco'), array('controller' => 'partyfacilitydiscos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Partyfacilitydancefloors'), array('controller' => 'partyfacilitydancefloors', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Partyfacilitydancefloor'), array('controller' => 'partyfacilitydancefloors', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictionnoises'), array('controller' => 'restrictionnoises', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictionnoise'), array('controller' => 'restrictionnoises', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictionevents'), array('controller' => 'restrictionevents', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictionevent'), array('controller' => 'restrictionevents', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictionminors'), array('controller' => 'restrictionminors', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictionminor'), array('controller' => 'restrictionminors', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictionanimals'), array('controller' => 'restrictionanimals', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictionanimal'), array('controller' => 'restrictionanimals', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictionsmokings'), array('controller' => 'restrictionsmokings', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictionsmoking'), array('controller' => 'restrictionsmokings', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Images'), array('controller' => 'images', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Image'), array('controller' => 'images', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Rooms'), array('controller' => 'rooms', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Room'), array('controller' => 'rooms', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Restrictiondecorations'), array('controller' => 'restrictiondecorations', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Restrictiondecoration'), array('controller' => 'restrictiondecorations', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Featurecateringrestrictions'), array('controller' => 'featurecateringrestrictions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Featurecateringrestriction'), array('controller' => 'featurecateringrestrictions', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Availabilities'), array('controller' => 'availabilities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Availability'), array('controller' => 'availabilities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Suitabilities'), array('controller' => 'suitabilities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Suitability'), array('controller' => 'suitabilities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Pricings'), array('controller' => 'pricings', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Pricing'), array('controller' => 'pricings', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Technical Facilities'), array('controller' => 'technical_facilities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Technical Facility'), array('controller' => 'technical_facilities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Indoorfacilities'), array('controller' => 'indoorfacilities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Indoorfacility'), array('controller' => 'indoorfacilities', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Outdoorfacilities'), array('controller' => 'outdoorfacilities', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Outdoorfacility'), array('controller' => 'outdoorfacilities', 'action' => 'add')); ?> </li>
+	</ul>
+</div>
+
+
+
+
+    parent::beforeFilter();
+

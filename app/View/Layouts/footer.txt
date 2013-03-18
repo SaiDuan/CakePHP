@@ -1,0 +1,45 @@
+<!--<div class = "footer">
+
+			<div id="socialicons">
+
+	<div class="moduletable"style = "margin-bottom:100px">
+					<div id="social">
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.hallsforhire.com.au/&amp;layout=button_count&amp;show_faces=true&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>
+
+
+
+
+<div id="k"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+</div>
+
+</div>		</div>
+	
+
+					<!-- Footer end -->
+
+			</div>
+
+			<div id="footer">
+
+
+<div class="moduletable">
+					<ul class="menu" id="fmenu"><li class="item84"><a href="/index.php"><span>Search</span></a></li><li class="item70"><a href="/about"><span>About Us</span></a></li><li class="item76"><a href="/advertise"><span>Advertise with Us</span></a></li><li class="item77"><a href="/pricing"><span>Pricing</span></a></li><li class="item78"><a href="/terms-of-use"><span>Terms of use</span></a></li><li class="item75"><a href="/contact-us"><span>Contact Us</span></a></li></ul>		</div>
+			<div class="moduletable">
+					<div class="bannergroup">
+
+
+</div>		</div>
+			<div class="moduletable">
+					<div>Copyright &#169; 2012 Halls For Hire. All Rights Reserved.</div>
+<div><a href="http://www.joomla.org">Joomla!</a> is Free Software released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL License.</a></div>		</div>
+	
+
+					<!-- Footer end -->
+
+			</div>
+
+			<br style="clear:both; font-size:1px;" />
+
+		</div>
+</div>-->

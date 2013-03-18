@@ -1,0 +1,89 @@
+<th><?php echo $this->Paginator->sort('website');?></th>
+			<th><?php echo $this->Paginator->sort('email');?></th>
+			<th><?php echo $this->Paginator->sort('hall_description');?></th>
+			<th><?php echo $this->Paginator->sort('capacity');?></th>
+			<th><?php echo $this->Paginator->sort('features_private_area');?></th>
+			<th><?php echo $this->Paginator->sort('features_private_toilets');?></th>
+			<th><?php echo $this->Paginator->sort('features_disabled_toilets');?></th>
+			<th><?php echo $this->Paginator->sort('features_wheelchair_access');?></th>
+			<th><?php echo $this->Paginator->sort('features_venue_catering');?></th>
+			<th><?php echo $this->Paginator->sort('features_other_catering');?></th>
+			<th><?php echo $this->Paginator->sort('indoor_facilities_other');?></th>
+			<th><?php echo $this->Paginator->sort('outdoor_facitilities_other');?></th>
+			<th><?php echo $this->Paginator->sort('technical_facilities_other');?></th>
+			<th><?php echo $this->Paginator->sort('party_facilities_other');?></th>
+			<th><?php echo $this->Paginator->sort('halls_restriction_other');?></th>
+			<th><?php echo $this->Paginator->sort('hallsowners_id');?></th>
+			<th><?php echo $this->Paginator->sort('featureparkings_id');?></th>
+			<th><?php echo $this->Paginator->sort('featureexternalcaterings_id');?></th>
+			<th><?php echo $this->Paginator->sort('partyfacilitiesdjs_id');?></th>
+			<th><?php echo $this->Paginator->sort('partyfacilitymusics_id');?></th>
+			<th><?php echo $this->Paginator->sort('partyfacilitybands_id');?></th>
+			<th><?php echo $this->Paginator->sort('partyfacilitydiscos_id');?></th>
+			<th><?php echo $this->Paginator->sort('partyfacilitydancefloors_id');?></th>
+			<th><?php echo $this->Paginator->sort('restrictionnoises_id');?></th>
+			<th><?php echo $this->Paginator->sort('restrictionevents_id');?></th>
+			<th><?php echo $this->Paginator->sort('restrictionminors_id');?></th>
+			<th><?php echo $this->Paginator->sort('restrictionanimals_id');?></th>
+			<th><?php echo $this->Paginator->sort('restrictionsmokings_id');?></th>
+
+
+
+
+below
+
+
+<td><?php echo h($hall['Hall']['website']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['email']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['hall_description']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['capacity']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_private_area']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_private_toilets']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_disabled_toilets']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_wheelchair_access']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_venue_catering']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['features_other_catering']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['indoor_facilities_other']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['outdoor_facitilities_other']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['technical_facilities_other']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['party_facilities_other']); ?>&nbsp;</td>
+		<td><?php echo h($hall['Hall']['halls_restriction_other']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($hall['Hallsowner']['hallsowner_first_name'], array('controller' => 'hallsowners', 'action' => 'view', $hall['Hallsowner']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Featureparking']['featureparkings_desciption'], array('controller' => 'featureparkings', 'action' => 'view', $hall['Featureparking']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Featureexternalcatering']['caterings_description'], array('controller' => 'featureexternalcaterings', 'action' => 'view', $hall['Featureexternalcatering']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Partyfacilitiesdj']['dj_descriptions'], array('controller' => 'partyfacilitiesdjs', 'action' => 'view', $hall['Partyfacilitiesdj']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Partyfacilitymusic']['music_description'], array('controller' => 'partyfacilitymusics', 'action' => 'view', $hall['Partyfacilitymusic']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Partyfacilityband']['band_description'], array('controller' => 'partyfacilitybands', 'action' => 'view', $hall['Partyfacilityband']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Partyfacilitydisco']['disco_description'], array('controller' => 'partyfacilitydiscos', 'action' => 'view', $hall['Partyfacilitydisco']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Partyfacilitydancefloor']['dance_floor_description'], array('controller' => 'partyfacilitydancefloors', 'action' => 'view', $hall['Partyfacilitydancefloor']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Restrictionnoise']['noise_description'], array('controller' => 'restrictionnoises', 'action' => 'view', $hall['Restrictionnoise']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Restrictionevent']['event_description'], array('controller' => 'restrictionevents', 'action' => 'view', $hall['Restrictionevent']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Restrictionminor']['minor_description'], array('controller' => 'restrictionminors', 'action' => 'view', $hall['Restrictionminor']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Restrictionanimal']['animal_description'], array('controller' => 'restrictionanimals', 'action' => 'view', $hall['Restrictionanimal']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($hall['Restrictionsmoking']['smoking_description'], array('controller' => 'restrictionsmokings', 'action' => 'view', $hall['Restrictionsmoking']['id'])); ?>
+		</td>
